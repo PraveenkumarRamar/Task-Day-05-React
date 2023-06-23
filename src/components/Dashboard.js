@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 function Dashboard() {
     let nav = useNavigate()
     return <>
-        <Carousel style={{width:"35rem",marginLeft:"20%"}} >
+        <Carousel style={{width:"35rem",marginLeft:"18%"}} >
             <Carousel.Item>
                 <img
                     className="d-block w-100"
@@ -14,7 +14,7 @@ function Dashboard() {
                 />
                 <Carousel.Caption>
                     <h3 onClick={()=>nav('/users')} style={{cursor:"pointer"}} >List user</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <p>Here is a user section, If you want to see the users? click List user</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -26,7 +26,7 @@ function Dashboard() {
 
                 <Carousel.Caption>
                     <h3 onClick={()=>nav('/create-user')} style={{cursor:"pointer"}} >Create user</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Here is a section to create a  new user, If you want to create new user? click create user</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -39,7 +39,7 @@ function Dashboard() {
                 <Carousel.Caption>
                     <h3 onClick={()=>nav('/profile')} style={{cursor:"pointer"}} >Profile</h3>
                     <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                    Here is a Profile section, If you want to see the Profiles? click profile
                     </p>
                 </Carousel.Caption>
             </Carousel.Item>
